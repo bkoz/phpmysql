@@ -1,4 +1,4 @@
-Notes for deploying on OpenShift
+# Deploying the book examples on OpenShift
 
 ```bash
 oc new-app php~https://github.com/bkoz/phpmysql.git
