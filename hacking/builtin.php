@@ -8,7 +8,7 @@
 	<!-- Script 1.3 - second.php -->
 	<p>This is standard HTML.</p>
 <?php
-echo 'This was generated using PHP!';
+echo "This was generated using PHP!\n";
 
 echo "\nCalling phpinfo()";
 
