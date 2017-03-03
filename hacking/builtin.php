@@ -10,7 +10,7 @@
 <?php
 echo 'This was generated using PHP!';
 
-echo "Calling phpinfo()";
+echo "\nCalling phpinfo()";
 
 phpinfo();
 ?>

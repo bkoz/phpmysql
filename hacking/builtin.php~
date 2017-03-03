@@ -9,7 +9,9 @@
 	<p>This is standard HTML.</p>
 <?php
 echo 'This was generated using PHP!';
+
 echo "Calling phpinfo()";
+
 phpinfo();
 ?>
 </body>
