@@ -22,12 +22,15 @@ echo "sitename = $sitename<br>";
 
 // Make the connection:
 // $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
-$dbc = @mysqli_connect ($mysql_host, $username, $password, $sitename) OR die ('mysqli_connect: Could not connect to MySQL: ' . mysqli_connect_error() );
+# $dbc = @mysqli_connect ($mysql_host, $username, $password, $sitename) OR die ('mysqli_connect: Could not connect to MySQL: ' . mysqli_connect_error() );
+$dbc = new mysqli ($mysql_host, $username, $password, $sitename) OR die ('mysqli_connect: Could not connect to MySQL: ' . mysqli_connect_error() );
 
 // Set the encoding...
-mysqli_set_charset($dbc, 'utf8');
+// mysqli_set_charset($dbc, 'utf8');
 
-echo "Host information: " . mysqli_get_host_info($dbc) . PHP_EOL;
+// echo "Host information: " . mysqli_get_host_info($dbc) . PHP_EOL;
+echo "Host information: " . $dbc->host_info . PHP_EOL;
 
-mysqli_close($dbc);
+
+// mysqli_close($dbc);
 
