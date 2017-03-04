@@ -14,11 +14,14 @@ $sitename=getenv('MYSQL_DATABASE');
 // DEFINE ('DB_HOST', 'localhost');
 // DEFINE ('DB_NAME', 'sitename');
 
-echo "username = $username";
+echo "username = $username<br>";
+echo "password = $password<br>";
+echo "localhost = $localhost<br>";
+echo "sitename = $sitename<br>";
 
 // Make the connection:
 // $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
-$dbc = @mysqli_connect ($localhost, $username, $password, $sitename) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+$dbc = @mysqli_connect ($localhost, $username, $password, $sitename) OR die ('mysqli_connect: Could not connect to MySQL: ' . mysqli_connect_error() );
 
 // Set the encoding...
 mysqli_set_charset($dbc, 'utf8');
