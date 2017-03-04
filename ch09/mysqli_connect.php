@@ -7,7 +7,7 @@
 // Set the database access information as constants:
 $username=getenv('MYSQL_USER');
 $password=getenv('MYSQL_PASSWORD');
-$localhost=getenv('MYSQL_SERVICE_HOST');
+$mysql_host=getenv('MYSQL_SERVICE_HOST');
 $sitename=getenv('MYSQL_DATABASE');
 // DEFINE ('DB_USER', 'username');
 // DEFINE ('DB_PASSWORD', 'password');
@@ -17,12 +17,17 @@ $sitename=getenv('MYSQL_DATABASE');
 echo "Environment vars:<br>";
 echo "username = $username<br>";
 echo "password = $password<br>";
-echo "localhost = $localhost<br>";
+echo "mysql_host = $mysql_host<br>";
 echo "sitename = $sitename<br>";
 
 // Make the connection:
 // $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
-$dbc = @mysqli_connect ($localhost, $username, $password, $sitename) OR die ('mysqli_connect: Could not connect to MySQL: ' . mysqli_connect_error() );
+$dbc = @mysqli_connect ($mysql_host, $username, $password, $sitename) OR die ('mysqli_connect: Could not connect to MySQL: ' . mysqli_connect_error() );
 
 // Set the encoding...
 mysqli_set_charset($dbc, 'utf8');
+
+echo "Host information: " . mysqli_get_host_info($dbc) . PHP_EOL;
+
+mysqli_close($dbc);
+
