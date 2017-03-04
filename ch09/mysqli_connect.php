@@ -24,7 +24,5 @@ echo "sitename = $sitename<br>";
 // $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
 $dbc = @mysqli_connect ($localhost, $username, $password, $sitename) OR die ('mysqli_connect: Could not connect to MySQL: ' . mysqli_connect_error() );
 
-echo "dbc = $dbc<br>";
-
 // Set the encoding...
 mysqli_set_charset($dbc, 'utf8');
