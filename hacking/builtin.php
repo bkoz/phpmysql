@@ -12,6 +12,7 @@ echo "This was generated using PHP!\n";
 echo "<br><br>";
 echo "<hr>";
 echo "<hr>";
+echo "<hr>";
 echo "\nCalling phpinfo()";
 
 phpinfo();
