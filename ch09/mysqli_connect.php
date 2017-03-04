@@ -8,7 +8,7 @@
 $username=getenv('MYSQL_USER');
 $password=getenv('MYSQL_USER');
 $localhost=getenv('MYSQL_HOST');
-$sitename=getenv('MYSQL_DATABASE);
+$sitename=getenv('MYSQL_DATABASE');
 // DEFINE ('DB_USER', 'username');
 // DEFINE ('DB_PASSWORD', 'password');
 // DEFINE ('DB_HOST', 'localhost');
