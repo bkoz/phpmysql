@@ -6,7 +6,7 @@
 
 // Set the database access information as constants:
 $username=getenv('MYSQL_USER');
-$password=getenv('MYSQL_USER');
+$password=getenv('MYSQL_PASSWORD');
 $localhost=getenv('MYSQL_HOST');
 $sitename=getenv('MYSQL_DATABASE');
 // DEFINE ('DB_USER', 'username');
