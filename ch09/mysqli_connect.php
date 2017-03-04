@@ -5,6 +5,7 @@
 // selects the database, and sets the encoding.
 
 // Set the database access information as constants:
+username="user";
 username=getenv('MYSQL_USER');
 password=getenv('MYSQL_USER');
 localhost=getenv('MYSQL_HOST');
