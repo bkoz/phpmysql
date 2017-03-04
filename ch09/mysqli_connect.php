@@ -35,5 +35,5 @@ echo "<br>client : " . $dbc->client_info . PHP_EOL;
 echo "<br>proto_info : " . $dbc->proto_info . PHP_EOL;
 
 
-// mysqli_close($dbc);
+mysqli_close($dbc);
 
