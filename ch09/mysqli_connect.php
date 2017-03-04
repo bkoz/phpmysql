@@ -30,6 +30,7 @@ $dbc = new mysqli ($mysql_host, $username, $password, $sitename) OR die ('mysqli
 
 // echo "Host information: " . mysqli_get_host_info($dbc) . PHP_EOL;
 echo "Host information: " . $dbc->host_info . PHP_EOL;
+echo "Server information: " . $dbc->server_info . PHP_EOL;
 
 
 // mysqli_close($dbc);
