@@ -14,6 +14,7 @@ $sitename=getenv('MYSQL_DATABASE');
 // DEFINE ('DB_HOST', 'localhost');
 // DEFINE ('DB_NAME', 'sitename');
 
+echo "Environment vars:<br>";
 echo "username = $username<br>";
 echo "password = $password<br>";
 echo "localhost = $localhost<br>";
